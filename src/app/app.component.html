@@ -1,0 +1,33 @@
+<div class="container">
+  <div>
+    <div>
+      <h2 class="display-3">Registrar novos usuários</h2>
+    </div>
+    <div>
+      <label for="">Nome: </label>
+      <input class="form-control mt-10 mb-10" type="text" [(ngModel)]="name" name="nome" placeholder="Nome Completo" />
+      <p class="mt-5 mb-5" style="color: red;" *ngIf="nameError ? name == '' : false">O campo Nome é obrigatório!</p>
+
+      <label for="">E-mail: </label>
+      <input class="form-control mt-10 mb-10" type="email" [(ngModel)]="email" name="email" placeholder="exemplo@hotmail.com" />
+      <p class="mt-5 mb-5" style="color: red;" *ngIf="emailError ? email == '' : false">O campo E-mail é obrigatório!</p>
+
+      <label for="">Telefone: </label>
+      <input class="form-control mt-10 mb-10" type="tel" name="telefone" [(ngModel)]="phone" placeholder="(81)99999-6666" />
+      <p class="mt-5 mb-5" style="color: red;" *ngIf="phoneError ? phone == '' : false">O Telefone Nome é obrigatório!</p>
+
+      <div>
+        <!-- <button [disabled]="(name == '' || email == '' || phone == '')" class="" (click)="inserirCliente()">Registrar</button> -->
+        <button (click)="inserirCliente()">Registrar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="grid-3-columns mt-100">
+    <div class="base p-all-20 top-border-color" *ngFor="let cliente of clientes">
+        <h2 class="mt-5 mb-10">Nome: {{cliente.name}}</h2>
+        <p class="mt-10 mb-0"><strong>E-mail:</strong> {{cliente.email}}</p>
+        <p class="mt-5 mb-0"><strong>Telefone:</strong> {{cliente.phone}}</p>
+    </div>
+  </div> 
+</div>

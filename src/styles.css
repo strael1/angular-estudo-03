@@ -1,0 +1,237 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    margin: 0;
+    font-family: 'Open Sans',sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+}
+
+
+/* FLEXBOX */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* GRID */
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+}
+
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+}
+
+.grid-4-columns {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+}
+
+/* MARGINS */
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+/* PADDING */
+.p-all-20 {
+    padding: 20px;
+}
+
+
+/* TEXT */
+.text-white {
+    color: #fff;
+}
+
+.text-primary {
+    color: #333;
+}
+
+.text-secondary {
+    color: blue;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Display */
+.display-1 {
+    font-size: 58px; 
+}
+
+.display-2 {
+    font-size: 52px; 
+}
+
+.display-3 {
+    font-size: 45px; 
+}
+
+.display-4 {
+    font-size: 30px;
+}
+
+/* BASE-CARD */
+.base {
+    border: solid 1px #eee;
+    box-shadow: 0 0 20px rgba(0,0,0, .1);
+}
+
+.top-border-color {
+    border-top: solid 10px #8e44ad9e;
+}
+
+
+/* FORM */
+.form-control {
+    padding: 15px;
+    outline: none;
+    font-size: 16px;
+    border: solid 1px #cecece;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn {
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.default {
+    background: #130f40;
+    color: #fff;
+    border: solid 1px #130f40;
+}
+
+
